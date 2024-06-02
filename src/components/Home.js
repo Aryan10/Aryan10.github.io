@@ -14,8 +14,8 @@ const Home = () => {
           <section className="home-section">
             <h2>About Me</h2>
             <p className="about-me">An aspiring developer who loves coding solutions.
-            <br></br>I am into Competitive Programming, Machine Learning,
-            <br></br>Data Science, Software, App and Web Development!</p>
+            <br></br>I am into Competitive Programming, Machine Learning,&nbsp;
+            <br class="hidden-mobile"></br>Data Science, Software, App and Web Development!</p>
           </section>
           <section className="home-section">
             <h2>Education</h2>

@@ -19,3 +19,8 @@
     text-decoration: underline;
   }
   
+  @media (max-width: 767px) {
+    .navbar {
+      display: none;
+    }
+  }
