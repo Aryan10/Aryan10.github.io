@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Tooltip } from 'react-tooltip';
 import './Home.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -36,8 +37,12 @@ const Home = () => {
               <li>React</li>
               <li>MongoDB</li>
               <li>Github</li>
-              <a href="/skills">View all</a>
+              <Link to="/skills">View all</Link>
             </ul>
+          </section>
+          <section className="home-section mobile-only">
+            <h2 className="default-cursor">Projects</h2>
+            <Link to="/projects">View all</Link>
           </section>
           <section className="home-section">
             <h2 className="default-cursor">Links</h2>
