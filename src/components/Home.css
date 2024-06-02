@@ -1,21 +1,97 @@
 .home {
-    padding: 2rem;
-  }
-  
-  header {
-    text-align: center;
-  }
-  
-  section {
-    margin-bottom: 2rem;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  ul li {
-    margin-bottom: 0.5rem;
-  }
-  
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.home-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.first-words {
+  color: #002057;
+}
+
+.last-name {
+  color: #2D00E2;
+  text-decoration: none;
+}
+
+.left-column, .right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.left-column {
+  flex: 1 1 70%;
+  margin-right: 8rem;
+}
+
+.right-column {
+  flex: 1 1 30%;
+}
+
+.about-me {
+  font-size: 20px;
+}
+
+.education-first {
+  color: #062e74;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.education-second {
+  font-size: 18px;
+}
+
+.home-section {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  /* padding-left: 8rem;
+  padding-right: 8rem; */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.home-section h2 {
+  margin-top: 0;
+}
+
+.home-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.home-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.home-section a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.home-section a:hover {
+  text-decoration: underline;
+}
+
+.icons-list {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-around;
+}
+
+.icons-list li {
+  list-style: none;
+}
