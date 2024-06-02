@@ -1,0 +1,21 @@
+.home {
+    padding: 2rem;
+  }
+  
+  header {
+    text-align: center;
+  }
+  
+  section {
+    margin-bottom: 2rem;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 0.5rem;
+  }
+  

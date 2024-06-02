@@ -1,0 +1,13 @@
+.projects {
+    padding: 2rem;
+  }
+  
+  .projects ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .projects ul li {
+    margin-bottom: 2rem;
+  }
+  
