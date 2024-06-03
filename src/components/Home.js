@@ -33,9 +33,7 @@ const Home = () => {
             <ul className="skillz">
               <li>C/C++</li>
               <li>Python</li>
-              <li>Nodejs</li>
-              <li>React</li>
-              <li>MongoDB</li>
+              <li>MERN Stack</li>
               <li>Github</li>
               <Link to="/skills">View all</Link>
             </ul>
@@ -52,6 +50,8 @@ const Home = () => {
               <Tooltip id="codeforces-username" />
               <Tooltip id="leetcode-username" />
               <Tooltip id="github-username" />
+              <Tooltip id="cfbadge" />
+              <Tooltip id="lcbadge" /> 
               <li>
                 <a data-tooltip-id="linkedin-username" data-tooltip-content="@ultraaryan10" data-tooltip-place="top"
                 href="https://linkedin.com/in/ultraaryan10" target="_blank" rel="noopener noreferrer">
@@ -79,10 +79,25 @@ const Home = () => {
               </li>
               <li>
                 <a data-tooltip-id="codeforces-username" data-tooltip-content="@ultraaryan10" data-tooltip-place="top"
-                href="https://codeforces.com/profile/ultraaryan10" target="_blank" rel="noopener noreferrer">
-                  <img alt="" src="https://cdn.iconscout.com/icon/free/png-256/free-code-forces-3521352-2944796.png?f=webp" height="32" width="32"></img>
+                href="https://codechef.com/users/ultraaryan10" target="_blank" rel="noopener noreferrer">
+                  {/* <img alt="" src="https://cdn.iconscout.com/icon/free/png-256/free-code-forces-3521352-2944796.png?f=webp" height="32" width="32"></img> */}
+                  <img alt="" src="https://www.svgrepo.com/show/305880/codechef.svg" height="32" width="32"></img>
                 </a>
               </li>
+            </ul>
+            <ul>
+            <li>
+              <a data-tooltip-id="cfbadge" data-tooltip-content="@ultraaryan10" data-tooltip-place="top"
+              href="https://leetcode.com/ultraaryan10" target="_blank" rel="noopener noreferrer">
+                <img alt="" src="https://codeforces-readme-stats.vercel.app/api/badge?username=ultraaryan10"></img>
+              </a>
+            </li>
+            <li>
+              <a data-tooltip-id="lcbadge" data-tooltip-content="@ultraaryan10" data-tooltip-place="top"
+              href="https://leetcode.com/ultraaryan10" target="_blank" rel="noopener noreferrer">
+                <img alt="" src="https://img.shields.io/badge/dynamic/json?style=flat&labelColor=black&color=%23ffa116&label=Solved&query=solved&url=https%3A%2F%2Fleetcode-badge.vercel.app%2Fapi%2Fusers%2Fultraaryan10&logo=leetcode&logoColor=yellow"></img>
+              </a>
+            </li>
             </ul>
           </section>
           <section className="home-section">

@@ -29,7 +29,7 @@ const Projects = () => {
 
   return (
     <div className="projects">
-      <h2>My Projects</h2>
+      <h2>My <span className='highlight'>Projects</span></h2>
       <div className="projects-list">
         {projectList.map((project, index) => (
           <ProjectCard

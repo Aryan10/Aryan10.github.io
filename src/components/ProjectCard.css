@@ -13,18 +13,21 @@
   .project-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: default;
   }
   
   .project-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: default;
   }
   
   .project-title {
     margin: 0;
     font-size: 1.5rem;
     color: #333;
+    cursor: default;
   }
   
   .project-link {
@@ -36,6 +39,7 @@
     margin: 1rem 0 0;
     font-size: 14px;
     color: #666;
+    cursor: default;
   }
   
   @media (min-width: 768px) {
