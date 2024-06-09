@@ -5,14 +5,14 @@ const projectList = [
         title: "Website: Personal Portfolio",
         repoURL: github + "Aryan10/Aryan10.github.io",
         description: "Simple portfolio website, in development",
-        techstack: ["reactjs", "css", "git"],
+        techstack: ["reactjs", "css", "git", "github-pages"],
         timeperiod: "June 2024",
     },
     {
         title: "Website: E-Commerce Platform",
         repoURL: github + "Nishant040305/Vend-Ventures",
         description: "Online marketplace where users can both buy and sell. Includes user login, chatting, cart and wishlist. Made in one week for Weekend of Code 2024 @ MNNIT (Top 10 Teams)",
-        techstack: ["mongodb", "nodejs", "expressjs", "reactjs", "socketio", "googleauth"],
+        techstack: ["mongodb", "nodejs", "expressjs", "reactjs", "socketio", "googleauth", "git"],
         timeperiod: "April 2024",
     },
     {
