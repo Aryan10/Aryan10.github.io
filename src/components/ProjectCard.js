@@ -4,16 +4,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import './ProjectCard.css';
 
-const ProjectCard = ({ title, repoURL, description }) => {
+const ProjectCard = ({ project }) => {
   return (
     <div className="project-card">
       <div className="project-header">
-        <h3 className="project-title">{title}</h3>
-        <a href={repoURL} target="_blank" rel="noopener noreferrer" className="project-link">
+        <h3 className="project-title">{project.title}</h3>
+        <a href={project.repoURL} target="_blank" rel="noopener noreferrer" className="project-link">
           <FontAwesomeIcon icon={faGithub} size="2x" />
         </a>
       </div>
-      <p className="project-description">{description}</p>
+      <p className="project-description">{project.description}</p>
     </div>
   );
 };
