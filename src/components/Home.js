@@ -4,12 +4,12 @@ import { Tooltip } from 'react-tooltip';
 import './Home.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub, faDiscord} from '@fortawesome/free-brands-svg-icons';
-import {RemoveScrollBar} from 'react-remove-scroll-bar';
+// import {RemoveScrollBar} from 'react-remove-scroll-bar';
 
 const Home = () => {
   return (
     <div className="home">
-      <RemoveScrollBar />
+      {/* <RemoveScrollBar /> */}
       <div className="home-content">
         <div className="left-column">
           <header className="home-header">
@@ -45,7 +45,7 @@ const Home = () => {
             <Link to="/projects">View all</Link>
           </section>
           <section className="home-section">
-            <h2 className="default-cursor">Links</h2>
+            <h2 className="default-cursor">Connect</h2>
             <ul className="icons-list">
               <Tooltip id="discord-username" />
               <Tooltip id="linkedin-username" />
