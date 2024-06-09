@@ -4,10 +4,12 @@ import { Tooltip } from 'react-tooltip';
 import './Home.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub, faDiscord} from '@fortawesome/free-brands-svg-icons';
+import {RemoveScrollBar} from 'react-remove-scroll-bar';
 
 const Home = () => {
   return (
     <div className="home">
+      <RemoveScrollBar />
       <div className="home-content">
         <div className="left-column">
           <header className="home-header">
@@ -69,19 +71,6 @@ const Home = () => {
                 href="https://discord.com/users/273865811133857792" target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={faDiscord} size="2x" />
                   <Tooltip place="top" type="dark" effect="float"/>
-                </a>
-              </li>
-              <li>
-                <a data-tooltip-id="leetcode-username" data-tooltip-content="@ultraaryan10" data-tooltip-place="top"
-                href="https://leetcode.com/ultraaryan10" target="_blank" rel="noopener noreferrer">
-                  <img alt="" src="https://cdn.iconscout.com/icon/free/png-512/free-leetcode-3521542-2944960.png?f=avif&w=256" height="32" width="32"></img>
-                </a>
-              </li>
-              <li>
-                <a data-tooltip-id="codeforces-username" data-tooltip-content="@ultraaryan10" data-tooltip-place="top"
-                href="https://codechef.com/users/ultraaryan10" target="_blank" rel="noopener noreferrer">
-                  {/* <img alt="" src="https://cdn.iconscout.com/icon/free/png-256/free-code-forces-3521352-2944796.png?f=webp" height="32" width="32"></img> */}
-                  <img alt="" src="https://www.svgrepo.com/show/305880/codechef.svg" height="32" width="32"></img>
                 </a>
               </li>
             </ul>

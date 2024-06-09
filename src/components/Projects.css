@@ -1,17 +1,70 @@
-.projects {
-    padding: 2rem;
+.project-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-title {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.project-link {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.project-description {
+  margin: 1rem 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.project-tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-tag {
+  background-color: #f0f0f0;
+  border-radius: 12px;
+  padding: 0.1rem 0.5rem;
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.project-time {
+  font-size: 0.875rem;
+  color: #999;
+  position: absolute;
+  bottom: 0rem;
+  right: 1rem;
+}
+
+/* Center project cards and add padding on larger screens */
+@media (min-width: 768px) {
+  .project-card {
+    margin: 1rem auto;
+    padding: 1rem 2rem;
   }
-  
-  .projects ul {
-    list-style-type: none;
-    padding: 0;
-    overflow-y: auto
-  }
-  
-  .projects ul li {
-    margin-bottom: 2rem;
-  }
-  
-.highlight {
-  color: #2D00E2;
 }

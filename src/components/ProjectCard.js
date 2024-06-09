@@ -1,10 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import './ProjectCard.css';
 
 const ProjectCard = ({ project }) => {
+  // console.log(project);
   return (
     <div className="project-card">
       <div className="project-header">
@@ -14,14 +14,14 @@ const ProjectCard = ({ project }) => {
         </a>
       </div>
       <p className="project-description">{project.description}</p>
+      <div className="project-tech-stack">
+        {project.techstack.map((tech, index) => (
+          <span key={index} className="tech-tag">{tech}</span>
+        ))}
+      </div>
+      <p className="project-time">{project.timeperiod}</p>
     </div>
   );
-};
-
-ProjectCard.propTypes = {
-  title: PropTypes.string.isRequired,
-  repoURL: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
 };
 
 export default ProjectCard;
