@@ -3,13 +3,11 @@ import { Link } from 'react-router-dom';
 import { Tooltip } from 'react-tooltip';
 import './Home.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faGithub, faDiscord} from '@fortawesome/free-brands-svg-icons';
-// import {RemoveScrollBar} from 'react-remove-scroll-bar';
+import { faLinkedin, faGithub, faDiscord } from '@fortawesome/free-brands-svg-icons';
 
 const Home = () => {
   return (
     <div className="home">
-      {/* <RemoveScrollBar /> */}
       <div className="home-content">
         <div className="left-column">
           <header className="home-header">
@@ -24,8 +22,8 @@ const Home = () => {
           <section className="home-section">
             <h2 className="default-cursor">Education</h2>
             <p><div class="education-first">Graduating in B. Tech @ NIT Allahabad | 2023-2027</div>
-            <div class="education-second">Computer Science & Engineering | First Year</div>
-            <div class="education-second">CPI: 9.14 (as of 1st Sem) </div>
+            <div class="education-second">Computer Science & Engineering</div>
+            <div class="education-second"><Link to="/education">9.41 CPI</Link> (as of 1st Year) </div>
             </p>
           </section>
         </div>
@@ -77,14 +75,14 @@ const Home = () => {
             <ul>
             <li>
               <a data-tooltip-id="cfbadge" data-tooltip-content="@ultraaryan10" data-tooltip-place="top"
-              href="https://leetcode.com/ultraaryan10" target="_blank" rel="noopener noreferrer">
-                <img alt="" src="https://codeforces-readme-stats.vercel.app/api/badge?username=ultraaryan10"></img>
+              href="https://codeforces.com/profile/ultraaryan10" target="_blank" rel="noopener noreferrer">
+                <img alt="Codeforces" src="https://codeforces-readme-stats.vercel.app/api/badge?username=ultraaryan10"></img>
               </a>
             </li>
             <li>
               <a data-tooltip-id="lcbadge" data-tooltip-content="@ultraaryan10" data-tooltip-place="top"
               href="https://leetcode.com/ultraaryan10" target="_blank" rel="noopener noreferrer">
-                <img alt="" src="https://img.shields.io/badge/dynamic/json?style=flat&labelColor=black&color=%23ffa116&label=Solved&query=solved&url=https%3A%2F%2Fleetcode-badge.vercel.app%2Fapi%2Fusers%2Fultraaryan10&logo=leetcode&logoColor=yellow"></img>
+                <img alt="Leetcode" src="https://img.shields.io/badge/dynamic/json?style=flat&labelColor=black&color=%23ffa116&label=Solved&query=solved&url=https%3A%2F%2Fleetcode-badge.vercel.app%2Fapi%2Fusers%2Fultraaryan10&logo=leetcode&logoColor=yellow"></img>
               </a>
             </li>
             </ul>
