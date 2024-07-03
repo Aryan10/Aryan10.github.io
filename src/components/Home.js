@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Tooltip } from 'react-tooltip';
 import './Home.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faGithub, faDiscord } from '@fortawesome/free-brands-svg-icons';
+import { socials, badges } from './data/socials';
 
 const Home = () => {
   return (
@@ -44,47 +44,41 @@ const Home = () => {
           </section>
           <section className="home-section">
             <h2 className="default-cursor">Connect</h2>
+            <Tooltip place="top" type="dark" effect="float"/>
             <ul className="icons-list">
-              <Tooltip id="discord-username" />
-              <Tooltip id="linkedin-username" />
-              <Tooltip id="codeforces-username" />
-              <Tooltip id="leetcode-username" />
-              <Tooltip id="github-username" />
-              <Tooltip id="cfbadge" />
-              <Tooltip id="lcbadge" /> 
-              <li>
-                <a data-tooltip-id="linkedin-username" data-tooltip-content="@ultraaryan10" data-tooltip-place="top"
-                href="https://linkedin.com/in/ultraaryan10" target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon icon={faLinkedin} size="2x" />
-                </a>
-              </li>
-              <li>
-                <a data-tooltip-id="github-username" data-tooltip-content="@Aryan10" data-tooltip-place="top"
-                href="https://github.com/Aryan10" target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon icon={faGithub} size="2x" />
-                </a>
-              </li>
-              <li>
-                <a data-tooltip-id="discord-username" data-tooltip-content="@aryan.10" data-tooltip-place="top"
-                href="https://discord.com/users/273865811133857792" target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon icon={faDiscord} size="2x" />
-                  <Tooltip place="top" type="dark" effect="float"/>
-                </a>
-              </li>
+              {Object.keys(socials).map(function (key, index) {
+                const item = socials[key];
+                console.log(item);
+                return (
+                  <li>
+                    <Tooltip id={key} />
+                    <a
+                      href={item["href"]}
+                      data-tooltip-id={key}
+                      data-tooltip-content={item["tooltip"]}
+                      data-tooltip-place="top" target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={item["icon"]} size="2x" />
+                    </a>
+                  </li>
+                );
+              })}
             </ul>
             <ul>
-            <li>
-              <a data-tooltip-id="cfbadge" data-tooltip-content="@ultraaryan10" data-tooltip-place="top"
-              href="https://codeforces.com/profile/ultraaryan10" target="_blank" rel="noopener noreferrer">
-                <img alt="Codeforces" src="https://codeforces-readme-stats.vercel.app/api/badge?username=ultraaryan10"></img>
-              </a>
-            </li>
-            <li>
-              <a data-tooltip-id="lcbadge" data-tooltip-content="@ultraaryan10" data-tooltip-place="top"
-              href="https://leetcode.com/ultraaryan10" target="_blank" rel="noopener noreferrer">
-                <img alt="Leetcode" src="https://img.shields.io/badge/dynamic/json?style=flat&labelColor=black&color=%23ffa116&label=Solved&query=solved&url=https%3A%2F%2Fleetcode-badge.vercel.app%2Fapi%2Fusers%2Fultraaryan10&logo=leetcode&logoColor=yellow"></img>
-              </a>
-            </li>
+              {Object.keys(badges).map(function (key, index) {
+                const item = badges[key];
+                return (
+                  <li>
+                    <Tooltip id={key} />
+                    <a
+                      href={item["href"]}
+                      data-tooltip-id={key}
+                      data-tooltip-content={item["tooltip"]}
+                      data-tooltip-place="top" target="_blank" rel="noopener noreferrer">
+                        <img alt={key} src={item["src"]}></img>
+                    </a>
+                  </li>
+                );
+              })}
             </ul>
           </section>
           <section className="home-section">
