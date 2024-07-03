@@ -19,14 +19,14 @@ export const socials = {
 };
 
 export const badges = {
+  "codeforces": {
+    "tooltip": "@ultraaryan10",
+    "href": "https://codeforces.com/profile/ultraaryan10",
+    "src": "https://codeforces-readme-stats.vercel.app/api/badge?username=ultraaryan10",
+  },
   "leetcode": {
     "tooltip": "@ultraaryan10",
     "href": "https://leetcode.com/ultraaryan10",
     "src": "https://img.shields.io/badge/dynamic/json?style=flat&labelColor=black&color=%23ffa116&label=Solved&query=solved&url=https%3A%2F%2Fleetcode-badge.vercel.app%2Fapi%2Fusers%2Fultraaryan10&logo=leetcode&logoColor=yellow",
   },
-  "codeforces": {
-    "tooltip": "@ultraaryan10",
-    "href": "https://codeforces.com/profile/ultraaryan10",
-    "src": "https://codeforces-readme-stats.vercel.app/api/badge?username=ultraaryan10",
-  }
 };
